@@ -103,6 +103,8 @@ p {
     letter-spacing: 0.03em;
     margin-left: 0;
     margin-right: 0;
+    transition-property: color;
+    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link,
 .contacts {
@@ -111,6 +113,8 @@ p {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    transition-property: background-color;
+    transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link {
     font-weight: 500;
@@ -120,12 +124,32 @@ p {
     font-weight:400;
     color: #434455;
 }
+.contacts-link:hover,
+.contacts:hover {
+    color: #404BBF
+}
+.studio:hover::after{
+    content: "";
+    display: block;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    background-color: #404BBF;
+    transition-property: background-color;
+    transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
 /* #endregion header */
 
 /* #region Hero Header Section*/
 
 .hero-header {
     background-color: #2E2F42;
+    background-image: url(../images/hero-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.4), rgba(46, 47, 66, 0.7)), url(../images/hero-header.jpg);
 }
 .hero-button {
     cursor: pointer;
@@ -139,12 +163,19 @@ p {
     margin-top: 48px;
     padding: 16px 32px;
     border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    transition-property: background-color;
+    transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-button:hover {
+    background-color: #404BBF;
 }
 .hero-header-container {
     flex-direction: column;
     align-items: center;
     padding-top: 188px;
     padding-bottom: 188px;
+    
 }
 .hero-title {
     max-width: 496px;
@@ -180,7 +211,16 @@ p {
     width: calc((100% - 72px) / 4);
     gap: 8px;
 }
-
+.features-item div {
+    width: 100%;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F4FD;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
 /* #endregion Features Section */
 
 /* #region Team Section */
@@ -203,7 +243,6 @@ p {
     align-items: center;
     background-color: #fff;
     width: calc((100% - 72px) / 4);
-    height: 380px;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
@@ -212,6 +251,32 @@ p {
     flex-direction: column;
     padding: 32px 16px;
     gap: 8px;
+}
+.team-socials {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+.link-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    border: 1px solid #4D5AE5;
+    border-radius: 50%;
+    padding: 8px;
+    transition-property: background-color;
+    transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon {
+    width: 16px;
+    height: 16px;
+    fill: none;
+}
+.link-icon:hover {
+    background-color: #404BBF;
 }
 /* #endregion Team Section */
 
@@ -232,6 +297,30 @@ p {
     flex-direction: column;
     width: calc((100% - 48px) / 3);
 }
+.portfolio-overlay-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    color: #F4F4FD;
+    display: block;
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+    
+    transform: translateY(100%);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-overlay-container:hover .overlay {
+    transform: translateY(0);
+}
 .portfolio-subtitle {
     padding-bottom: 8px;
 }
@@ -246,7 +335,8 @@ p {
 
 /* #region Footer Section */
 .footer-container {
-    flex-direction: column;
+    flex-direction: row;
+    gap: 120px;
     align-items: flex-start;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -254,6 +344,8 @@ p {
 .footer .logo {
     color: #F4F4FD;
     margin-bottom: 16px;
+    transition-property: color;
+    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .web {
@@ -276,5 +368,19 @@ p {
 }
 .footer-text {
     color: inherit;
+}
+.footer-socials-title {
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.footer-socials-links {
+    display: flex;
+    gap: 16px;
 }
 /* #endregion Footer Section */
