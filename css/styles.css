@@ -153,6 +153,7 @@ p {
     background-color: #2E2F42;
     background-image: url(../images/hero-header.jpg);
     max-width: 1440px;
+    margin: 0 auto;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
