@@ -22,7 +22,7 @@
             <nav class="nav">
                 <a class="logo" href="./index.html"><span class="web">Web</span>Studio</a>
                 <ul class="nav-list">
-                    <li><a class="contacts-link studio" href="#studio-id">Studio</a></li>
+                    <li><a class="contacts-link active" href="#studio-id">Studio</a></li>
                     <li><a class="contacts-link" href="#portfolio-id">Portfolio</a></li>
                     <li><a class="contacts-link" href="#contacts-id">Contacts</a></li>
                 </ul>
@@ -57,14 +57,26 @@
                 <h2 class="features-title visually-hidden">Our Features</h2>
                 <ul class="features-list">
                     <li class="features-item">
-                        <div class="feature-img"><img src="./images/features-icons/antenna.svg" alt="antenna" width="64" height="64"></div>
+                        <div class="feature-img">
+                            <svg class="icon-feature">
+                                <use href="./images/features-icons.svg#icon-antenna" 
+                                width="64" 
+                                height="64"></use>
+                            </svg>
+                        </div>
                         <h3>Strategy</h3>
                         <p>Our goal is to identify the business
                             problem to walk away with the perfect and creative solution.
                         </p>
                     </li>
                     <li class="features-item">
-                        <div class="feature-img"><img src="./images/features-icons/clock.svg" alt="clock" width="64" height="64"></div>
+                        <div class="feature-img">
+                            <svg class="icon-feature">
+                                <use href="./images/features-icons.svg#icon-clock"
+                                width="64" 
+                                height="64"></use>
+                            </svg>
+                        </div>
                         <h3>Punctuality</h3>
                         <p>
                             Bring the key message to the brand's audience for the best price within the shortest possible
@@ -72,14 +84,26 @@
                         </p>
                     </li>
                     <li class="features-item">
-                        <div class="feature-img"><img src="./images/features-icons/diagram.svg" alt="diagram" width="64" height="64"></div>
+                        <div class="feature-img">
+                            <svg class="icon-feature">
+                                <use href="./images/features-icons.svg#icon-diagram" 
+                                width="64" 
+                                height="64"></use>
+                            </svg>
+                        </div>
                         <h3>Diligence</h3>
                         <p>
                             Research and confirm brands with the strongest digital growth opportunities and minimize risk.
                         </p>
                     </li>
                     <li class="features-item">
-                        <div class="feature-img"><img src="./images/features-icons/astronaut.svg" alt="astronaut" width="64" height="64"></div>
+                        <div class="feature-img">
+                            <svg class="icon-feature">
+                                <use href="./images/features-icons.svg#icon-astronaut"
+                                width="64" 
+                                height="64"></use>
+                            </svg>
+                        </div>
                         <h3>Technologies</h3>
                         <p>
                             Design practice focused on digital experiences. We bring forth a deep passion for
@@ -101,31 +125,47 @@
                         <div class="team-info">
                             <h3 class="team-subtitle">Mark Guerrero</h3>
                             <p class="team-text">Product Designer</p>
-                            <div class="team-socials">
-                                <a class="link-icon" href="https://www.instagram.com/mark_guerrero/" target="_blank" rel="noopener noreferrer" aria-label="Mark Guerrero's Instagram profile">
-                                    <svg class="icon icon-instagram">
-                                        <use xlink:href="./images/link-icons/icons.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                                <a class="link-icon" href="https://www.twitter.com/mark_guerrero/" target="_blank" rel="noopener noreferrer"
-                                    aria-label="Mark Guerrero's twitter profile">
-                                    <svg class="icon icon-twitter">
-                                        <use xlink:href="./images/link-icons/icons.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                                <a class="link-icon" href="https://www.facebook.com/mark_guerrero/" target="_blank" rel="noopener noreferrer"
-                                    aria-label="Mark Guerrero's facebook profile">
-                                    <svg class="icon icon-facebook">
-                                        <use xlink:href="./images/link-icons/icons.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                                <a class="link-icon" href="https://www.linkedin.com/mark_guerrero/" target="_blank" rel="noopener noreferrer"
-                                    aria-label="Mark Guerrero's linkedin profile">
-                                    <svg class="icon icon-linkedin">
-                                        <use xlink:href="./images/link-icons/icons.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </div>
+                            <ul class="team-socials">
+                                <li>
+                                    <a class="link-icon" href="https://www.instagram.com/mark_guerrero/" target="_blank" rel="noopener noreferrer" aria-label="Mark Guerrero's Instagram profile" >
+                                        <svg class="icon">
+                                            <use href="./images/icons.svg#icon-instagram" 
+                                            width="16" 
+                                            height="16"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link-icon" href="https://www.twitter.com/mark_guerrero/" target="_blank" rel="noopener noreferrer"
+                                        aria-label="Mark Guerrero's twitter profile">
+                                        <svg class="icon icon-twitter">
+                                            <use href="./images/icons.svg#icon-twitter" 
+                                            width="16" 
+                                            height="16"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link-icon" href="https://www.facebook.com/mark_guerrero/" target="_blank" rel="noopener noreferrer"
+                                        aria-label="Mark Guerrero's facebook profile">
+                                        <svg class="icon">
+                                            <use href="./images/icons.svg#icon-facebook" 
+                                            width="16" 
+                                            height="16"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link-icon" href="https://www.linkedin.com/mark_guerrero/" target="_blank" rel="noopener noreferrer"
+                                        aria-label="Mark Guerrero's linkedin profile">
+                                        <svg class="icon">
+                                            <use href="./images/icons.svg#icon-linkedin" 
+                                            width="16" 
+                                            height="16"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                     <li class="team-item">
@@ -133,32 +173,48 @@
                         <div class="team-info">
                             <h3 class="team-subtitle">Tom Ford</h3>
                             <p class="team-text">Frontend Developer</p>
-                            <div class="team-socials">
-                                <a class="link-icon" href="https://www.instagram.com/tom_ford/" target="_blank" rel="noopener noreferrer"
-                                    aria-label="Tom Ford's Instagram profile">
-                                    <svg class="icon icon-instagram">
-                                        <use xlink:href="./images/link-icons/icons.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                                <a class="link-icon" href="https://www.twitter.com/tom_ford/" target="_blank" rel="noopener noreferrer"
-                                    aria-label="Tom Ford's twitter profile">
-                                    <svg class="icon icon-twitter">
-                                        <use xlink:href="./images/link-icons/icons.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                                <a class="link-icon" href="https://www.facebook.com/tom_ford/" target="_blank" rel="noopener noreferrer"
-                                    aria-label="Tom Ford's facebook profile">
-                                    <svg class="icon icon-facebook">
-                                        <use xlink:href="./images/link-icons/icons.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                                <a class="link-icon" href="https://www.linkedin.com/tom_ford/" target="_blank" rel="noopener noreferrer"
-                                    aria-label="Tom Ford's linkedin profile">
-                                    <svg class="icon icon-linkedin">
-                                        <use xlink:href="./images/link-icons/icons.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </div>
+                            <ul class="team-socials">
+                                <li>
+                                    <a class="link-icon" href="https://www.instagram.com/tom_ford/" target="_blank" rel="noopener noreferrer"
+                                        aria-label="Tom Ford's Instagram profile">
+                                        <svg class="icon icon-instagram">
+                                            <use href="./images/icons.svg#icon-instagram" 
+                                            width="16" 
+                                            height="16"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link-icon" href="https://www.twitter.com/tom_ford/" target="_blank" rel="noopener noreferrer"
+                                        aria-label="Tom Ford's twitter profile">
+                                        <svg class="icon icon-twitter">
+                                            <use href="./images/icons.svg#icon-twitter" 
+                                            width="16" 
+                                            height="16"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link-icon" href="https://www.facebook.com/tom_ford/" target="_blank" rel="noopener noreferrer"
+                                        aria-label="Tom Ford's facebook profile">
+                                        <svg class="icon icon-facebook">
+                                            <use href="./images/icons.svg#icon-facebook" 
+                                            width="16" 
+                                            height="16"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link-icon" href="https://www.linkedin.com/tom_ford/" target="_blank" rel="noopener noreferrer"
+                                        aria-label="Tom Ford's linkedin profile">
+                                        <svg class="icon icon-linkedin">
+                                            <use href="./images/icons.svg#icon-linkedin" 
+                                            width="16" 
+                                            height="16"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                     <li class="team-item">
@@ -166,32 +222,50 @@
                         <div class="team-info">
                             <h3 class="team-subtitle">Camila Garcia</h3>
                             <p class="team-text">Marketing</p>
-                            <div class="team-socials">
-                                <a class="link-icon" href="https://www.instagram.com/camila_garcia/" target="_blank" rel="noopener noreferrer"
-                                    aria-label="Camila Garcia's Instagram profile">
-                                    <svg class="icon icon-instagram">
-                                        <use xlink:href="./images/link-icons/icons.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                                <a class="link-icon" href="https://www.twitter.com/camila_garcia/" target="_blank" rel="noopener noreferrer"
-                                    aria-label="Camila Garcia's twitter profile">
-                                    <svg class="icon icon-twitter">
-                                        <use xlink:href="./images/link-icons/icons.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                                <a class="link-icon" href="https://www.facebook.com/camila_garcia/" target="_blank" rel="noopener noreferrer"
-                                    aria-label="Camila Garcia's facebook profile">
-                                    <svg class="icon icon-facebook">
-                                        <use xlink:href="./images/link-icons/icons.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                                <a class="link-icon" href="https://www.linkedin.com/camila_garcia/" target="_blank" rel="noopener noreferrer"
-                                    aria-label="Camila Garcia's linkedin profile">
-                                    <svg class="icon icon-linkedin">
-                                        <use xlink:href="./images/link-icons/icons.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </div>
+                            <ul class="team-socials">
+                                <li>
+                                    <a class="link-icon" href="https://www.instagram.com/camila_garcia/" target="_blank" rel="noopener noreferrer"
+                                        aria-label="Camila Garcia's Instagram profile">
+                                        <svg class="icon icon-instagram">
+                                            <use href="./images/icons.svg#icon-instagram" 
+                                            width="16" 
+                                            height="16">
+                                        </use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link-icon" href="https://www.twitter.com/camila_garcia/" target="_blank" rel="noopener noreferrer"
+                                        aria-label="Camila Garcia's twitter profile">
+                                        <svg class="icon icon-twitter">
+                                            <use href="./images/icons.svg#icon-twitter" 
+                                            width="16" 
+                                            height="16">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link-icon" href="https://www.facebook.com/camila_garcia/" target="_blank" rel="noopener noreferrer"
+                                        aria-label="Camila Garcia's facebook profile">
+                                        <svg class="icon icon-facebook">
+                                            <use href="./images/icons.svg#icon-facebook" 
+                                            width="16" 
+                                            height="16"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link-icon" href="https://www.linkedin.com/camila_garcia/" target="_blank" rel="noopener noreferrer"
+                                        aria-label="Camila Garcia's linkedin profile">
+                                        <svg class="icon icon-linkedin">
+                                            <use href="./images/icons.svg#icon-linkedin" 
+                                            width="16" 
+                                            height="16"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                     <li class="team-item">
@@ -199,38 +273,54 @@
                         <div class="team-info">
                             <h3 class="team-subtitle">Daniel Wilson</h3>
                             <p class="team-text">UI Designer</p>
-                            <div class="team-socials">
-                                <a class="link-icon" href="https://www.instagram.com/mark_guerrero/" target="_blank" rel="noopener noreferrer"
-                                    aria-label="Mark Guerrero's Instagram profile">
-                                    <svg class="icon icon-instagram">
-                                        <use xlink:href="./images/link-icons/icons.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                                <a class="link-icon" href="https://www.twitter.com/mark_guerrero/" target="_blank" rel="noopener noreferrer"
-                                    aria-label="Mark Guerrero's twitter profile">
-                                    <svg class="icon icon-twitter">
-                                        <use xlink:href="./images/link-icons/icons.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                                <a class="link-icon" href="https://www.facebook.com/mark_guerrero/" target="_blank" rel="noopener noreferrer"
-                                    aria-label="Mark Guerrero's facebook profile">
-                                    <svg class="icon icon-facebook">
-                                        <use xlink:href="./images/link-icons/icons.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                                <a class="link-icon" href="https://www.linkedin.com/mark_guerrero/" target="_blank" rel="noopener noreferrer"
-                                    aria-label="Mark Guerrero's linkedin profile">
-                                    <svg class="icon icon-linkedin">
-                                        <use xlink:href="./images/link-icons/icons.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </div>
+                            <ul class="team-socials">
+                                <li>
+                                    <a class="link-icon" href="https://www.instagram.com/mark_guerrero/" target="_blank" rel="noopener noreferrer"
+                                        aria-label="Mark Guerrero's Instagram profile">
+                                        <svg class="icon">
+                                            <use href="./images/icons.svg#icon-instagram" 
+                                            width="16" 
+                                            height="16"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link-icon" href="https://www.twitter.com/mark_guerrero/" target="_blank" rel="noopener noreferrer"
+                                        aria-label="Mark Guerrero's twitter profile">
+                                        <svg class="icon icon-twitter">
+                                            <use href="./images/icons.svg#icon-twitter"
+                                            width="16"
+                                            height="16"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link-icon" href="https://www.facebook.com/mark_guerrero/" target="_blank" rel="noopener noreferrer"
+                                        aria-label="Mark Guerrero's facebook profile">
+                                        <svg class="icon">
+                                            <use href="./images/icons.svg#icon-facebook"
+                                            width="16" 
+                                            height="16"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link-icon" href="https://www.linkedin.com/mark_guerrero/" target="_blank" rel="noopener noreferrer"
+                                        aria-label="Mark Guerrero's linkedin profile">
+                                        <svg class="icon">
+                                            <use href="./images/icons.svg#icon-linkedin"
+                                            width="16" 
+                                            height="16"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
-        
+                    
         <!--portfolio-section-->
         
         <section id="portfolio-id" class="section portfolio">
@@ -239,7 +329,9 @@
                 <ul class="portfolio-list">
                     <li class="portfolio-item">
                         <div class="portfolio-overlay-container">
-                            <img src="./images/images-portfolio/img-1.jpg" alt="Banking App" width="360" height="300">
+                            <img src="./images/images-portfolio/img-1.jpg" alt="Banking App" 
+                            width="360" 
+                            height="300">
                             <p class="overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App
@@ -252,7 +344,9 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-overlay-container">
-                            <img src="./images/images-portfolio/img-2.jpg" alt="Cashless Payment" width="360" height="300">
+                            <img src="./images/images-portfolio/img-2.jpg" alt="Cashless Payment" 
+                            width="360" 
+                            height="300">
                             <p class="overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App
@@ -265,7 +359,9 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-overlay-container">
-                            <img src="./images/images-portfolio/img-3.jpg" alt="Meditation App" width="360" height="300">
+                            <img src="./images/images-portfolio/img-3.jpg" alt="Meditation App" 
+                            width="360" 
+                            height="300">
                             <p class="overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App
@@ -278,7 +374,9 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-overlay-container">
-                            <img src="./images/images-portfolio/img-4.jpg" alt="Taxi Service" width="360" height="300">
+                            <img src="./images/images-portfolio/img-4.jpg" alt="Taxi Service" 
+                            width="360" 
+                            height="300">
                             <p class="overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App
@@ -291,7 +389,9 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-overlay-container">
-                            <img src="./images/images-portfolio/img-5.jpg" alt="Screen Illustrations" width="360" height="300">
+                            <img src="./images/images-portfolio/img-5.jpg" alt="Screen Illustrations" 
+                            width="360" 
+                            height="300">
                             <p class="overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App
@@ -333,33 +433,49 @@
                 </div>
 
                 <div class="footer-socials">
-                    <h3 class="footer-socials-title">Social media</h3>
-                    <div class="footer-socials-links">
-                        <a class="link-icon footer-icon" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
-                            aria-label="Instagram profile">
-                            <svg class="icon icon-instagram">
-                                <use xlink:href="./images/link-icons/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                        <a class="link-icon footer-icon" href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer"
-                            aria-label="twitter profile">
-                            <svg class="icon icon-twitter">
-                                <use xlink:href="./images/link-icons/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                        <a class="link-icon footer-icon" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
-                            aria-label="facebook profile">
-                            <svg class="icon icon-facebook">
-                                <use xlink:href="./images/link-icons/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                        <a class="link-icon footer-icon" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
-                            aria-label="linkedin profile">
-                            <svg class="icon icon-linkedin">
-                                <use xlink:href="./images/link-icons/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </div>
+                    <p class="footer-socials-title">Social media</p>
+                    <ul class="footer-socials-links">
+                        <li>
+                            <a class="link-icon footer-link-icon" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                                aria-label="Instagram profile">
+                                <svg class="icon footer-icon">
+                                    <use href="./images/icons.svg#icon-instagram"
+                                    width="24" 
+                                    height="24"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-icon footer-link-icon" href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer"
+                                aria-label="twitter profile">
+                                <svg class="icon footer-icon">
+                                    <use href="./images/icons.svg#icon-twitter"
+                                    width="24" 
+                                    height="24"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-icon footer-link-icon" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                                aria-label="facebook profile">
+                                <svg class="icon footer-icon">
+                                    <use href="./images/icons.svg#icon-facebook"
+                                    width="24" 
+                                    height="24"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-icon footer-link-icon" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                                aria-label="linkedin profile">
+                                <svg class="icon footer-icon">
+                                    <use href="./images/icons.svg#icon-linkedin"
+                                    width="24" 
+                                    height="24"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </footer>
