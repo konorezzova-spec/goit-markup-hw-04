@@ -353,16 +353,16 @@ p {
 /* #endregion Portfolio Section */
 
 /* #region Footer Section */
+
+
 .footer-container {
     flex-direction: row;
-    gap: 120px;
     align-items: baseline;
     padding-top: 100px;
     padding-bottom: 100px;
 }
 .footer .logo {
     color: #F4F4FD;
-    margin-bottom: 16px;
     transition-property: color;
     transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -384,6 +384,7 @@ p {
     flex-direction: column;
     gap: 16px;
     max-width: 264px;
+    margin-right: 120px;
 }
 .footer-text {
     color: inherit;
@@ -408,3 +409,4 @@ p {
     background-color: #31D0AA;
 }   
 /* #endregion Footer Section */
+
