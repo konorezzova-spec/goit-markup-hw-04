@@ -104,7 +104,6 @@ p {
     letter-spacing: 0.03em;
     margin-left: 0;
     margin-right: 0;
-    transition-property: color;
     transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link,
@@ -114,7 +113,6 @@ p {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    transition-property: color;
     transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link {
@@ -130,10 +128,10 @@ p {
 .contacts:hover {
     color: #404BBF
 }
-.active {
+.contacts-link.active {
     color: #404BBF;
 }
-.active::after{
+.contacts-link.active::after{
     content: "";
     display: block;
     width: 100%;
@@ -142,7 +140,6 @@ p {
     position: absolute;
     bottom: -1px;
     background-color: #404BBF;
-    transition-property: color;
     transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* #endregion header */
@@ -151,7 +148,6 @@ p {
 
 .hero-header {
     background-color: #2E2F42;
-    background-image: url(../images/hero-header.jpg);
     max-width: 1440px;
     margin: 0 auto;
     background-repeat: no-repeat;
@@ -168,11 +164,9 @@ p {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    margin-top: 48px;
     padding: 16px 32px;
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    transition-property: background-color;
     transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover {
@@ -187,6 +181,7 @@ p {
 }
 .hero-title {
     max-width: 496px;
+    margin-bottom: 48px;
 }
 .visually-hidden {
     position: absolute;
@@ -277,7 +272,7 @@ p {
     background-color: #4D5AE5;
     border-radius: 50%;
     padding: 8px;
-    transition-property: background-color;
+
     transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon {
@@ -363,7 +358,7 @@ p {
 }
 .footer .logo {
     color: #F4F4FD;
-    transition-property: color;
+    
     transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
